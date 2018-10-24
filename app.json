@@ -1,0 +1,44 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/createRoom/createRoom",
+    "pages/searchRoom/searchRoom",
+    "pages/friend/friend",
+    "pages/other/other",
+    "pages/createfriend/createfriend",
+    "pages/searchfriend/searchfriend"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/match.png",
+        "selectedIconPath": "images/match-green.png",
+        "text": "协力"
+      },
+      {
+        "pagePath": "pages/friend/friend",
+        "iconPath": "images/friend.png",
+        "selectedIconPath": "images/friend-green.png",
+        "text": "好友"
+      },
+      {
+        "pagePath": "pages/other/other",
+        "iconPath": "images/other.png",
+        "selectedIconPath": "images/other-green.png",
+        "text": "其他"
+      }
+    ]
+  }
+}

@@ -1,0 +1,45 @@
+page{
+  background-image: url("https://www.puzzleanddragon.cn/pad/images/beijing.jpg");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  /* opacity: 0.2; */
+  background-blend-mode: soft-light;
+}
+.box{
+  margin-top: 20rpx;
+
+}
+.picker{
+  /* background-color: yellow; */
+  margin-left: 40rpx;
+  width: 290rpx;
+  margin-top: 10rpx;
+  border-color: grey;
+  border-style: solid;
+  border-width: thin;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 20rpx;
+  font-size: 34rpx;
+  color: #000000;
+}
+.title{
+  margin-left: 40rpx;
+}
+.searchButton{
+  margin: 60rpx;
+}
+.roomList{
+  margin: 40rpx;
+  border-color: grey;
+  border-style: solid;
+  border-width: thin;
+
+}
+.room{
+  margin: 20rpx;
+}
+copyBtn{
+  margin-left: 20rpx;
+  height: 100rpx;
+}

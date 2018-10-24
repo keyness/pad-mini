@@ -1,0 +1,31 @@
+<view class='box'>
+  <view style='display: flex; flex-direction: row; align-items: center;'>
+    <view>
+      <view class='title'>副本类型:</view>
+      <picker bindchange="bindPickerChange" class='picker' value='{{index}}' range='{{array}}'>
+        <view>{{array[index]}}</view>
+      </picker>
+    </view>
+    <view>
+      <view class='title'>副本名称:</view>
+      <picker bindchange="changeDungeon" class='picker' value='{{index1}}' range='{{dungeons}}' range-key='name'>
+        <view>{{dungeons[index1].name}}</view>
+      </picker>
+    </view>
+  </view>
+  <button class='searchButton' type='primary' bindtap='toSearch'>搜索</button>
+
+  <!-- 列表 -->
+  <view wx:for='{{roomList}}' wx:key='{{item.id}}'>
+    <view class='roomList'>
+      <view class='room'>副本名: {{item.dungeonName}}</view>
+      <view class='room'>房间号: {{item.roomNum}}</view>
+      <view class='room'>队长: {{item.leader}}</view>
+      <view class='room'>备注: {{item.remark}}</view>
+      <view class='room'>创建时间: {{item.createTimeStr}}</view>
+      <button data-room-num='{{item.roomNum}}' bindtap='copyRoom'>复制房间号</button>
+      <!-- <image data-room-num='{{item.roomNum}}' class='copyBtn' bindtap='copyRoom' src='https://www.puzzleanddragon.cn/pad/images/copy.png' mode='scaleToFill'></image> -->
+    </view>
+  </view>
+  
+</view>

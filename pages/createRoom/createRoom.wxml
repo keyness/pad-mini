@@ -1,0 +1,29 @@
+<!--  style='flex-direction: row; align-items: center;' -->
+<view>
+
+  <view>
+    <view class='title'>副本名称:</view>
+    <picker bindchange="changeDungeon" class='picker' value='{{index1}}' range='{{dungeons}}' range-key='name'>
+      <view>{{dungeons[index1].name}}</view>
+    </picker>
+  </view>
+
+  <view class='box'>
+    <view>房间号:</view>
+    <input maxlength='8' value='{{roomNum}}' type='number' class='inputMsg' placeholder='请输入房间号' bindinput='getRoomNum'></input>
+  </view>
+
+  <view class='box'>
+    <view>队长:</view>
+    <input class='inputMsg' placeholder='请输入队长名' bindinput='getLeader'></input>
+  </view>
+
+  <view class='box'>
+    <view>备注:</view>
+    <input class='inputMsg' placeholder='请输入备注' bindinput='getRemark'></input>
+  </view>
+
+  <button class='submitButton' type='primary' bindtap='createRoom'>创建房间</button>
+</view>
+
+

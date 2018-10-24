@@ -1,0 +1,40 @@
+page{
+  background-image: url("https://www.puzzleanddragon.cn/pad/images/beijing.jpg");
+  background-size: 100%, 100%;
+  background-repeat: no-repeat;
+  /* background-blend-mode: soft-light */
+}
+.createRoom{
+  /* margin-top: 100rpx; */
+  /* background-color: yellow; */
+  text-align: center;
+}
+.createButton{
+  /* background-image: url("https://www.puzzleanddragon.cn/pad/images/create.png"); */
+  /* color: yellow; */
+  /* background-color: rgb(197, 113, 4); */
+  padding: 0;
+  border:none;
+}
+.swiper{
+  /* margin: 40rpx; */
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  height: 400rpx;
+}
+.searchRoom{
+  margin-top: 150rpx;
+  margin-left: 200rpx;
+  margin-right: 200rpx;
+  /* background-color: yellow; */
+  height: 100rpx;
+}
+.slide-image{
+  width: 100%;
+}
+.buttonimage{
+  margin-top: 100rpx;
+  height: 150rpx;
+  width: 600rpx;
+}
